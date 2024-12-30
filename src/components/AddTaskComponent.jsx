@@ -11,7 +11,7 @@ export const AddTaskComponent = () => {
 
   const handleAddTask = (task) => {
     addTask(task); 
-    navigate('/');
+    navigate('/'); 
   };
 
   return (
