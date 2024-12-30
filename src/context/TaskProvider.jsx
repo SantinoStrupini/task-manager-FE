@@ -8,7 +8,7 @@ export const TaskProvider = ({ children }) => {
   useEffect(() => {
     const fetchTasks = async () => {
       try {
-        const response = await fetch('http://localhost:3000/api/getAll');
+        const response = await fetch('https://task-manager-be-amy0.onrender.com/api/getAll');
         const data = await response.json();
         setTasks(data);
       } catch (error) {
@@ -21,7 +21,7 @@ export const TaskProvider = ({ children }) => {
   
   const addTask = async (task) => {
     try {
-      const response = await fetch('http://localhost:3000/api/create', {
+      const response = await fetch('https://task-manager-be-amy0.onrender.com/api/create', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(task),
@@ -38,7 +38,7 @@ export const TaskProvider = ({ children }) => {
 
   const editTask = async (id, updatedTask) => {
     try {
-      const response = await fetch(`http://localhost:3000/api/edit/${id}`, {
+      const response = await fetch(`https://task-manager-be-amy0.onrender.com/api/edit/${id}`, {
         method: 'PUT',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(updatedTask),
@@ -57,7 +57,7 @@ export const TaskProvider = ({ children }) => {
 
   const removeTask = async (id) => {
     try {
-      const response = await fetch(`http://localhost:3000/api/delete/${id}`, {
+      const response = await fetch(`https://task-manager-be-amy0.onrender.com/api/delete/${id}`, {
         method: 'DELETE',
       });
 
