@@ -1,0 +1,25 @@
+.taskCompletedContainer{
+    padding: 5px;
+}
+
+.taskContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 120px;
+}
+
+.listContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+}
+
+@media (max-width: 1024px) {
+   
+}
+@media (max-width: 768px) {
+    
+    
+}
