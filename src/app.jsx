@@ -1,8 +1,9 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { TaskComponent } from './components/TaskComponent'
 import { TaskProvider } from './context/TaskProvider';
-import { AddTaskComponent } from './components/addTaskComponent';
+
 import { EditTaskComponent } from './components/EditTaskComponent';
+import { AddTaskComponent } from './components/AddTaskComponent';
 
 
 
