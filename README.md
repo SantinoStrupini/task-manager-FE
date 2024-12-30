@@ -7,7 +7,10 @@
    npm install
    ```
 
-3. **Ejecutar el proyecto:**
+2. **Ejecutar el proyecto:**
    Para iniciar el servidor, utiliza el siguiente comando:
    npm run dev
-   ```   
+   ```
+**Link con la app en netlify**
+   https://taskmanagerstrupini.netlify.app/
+   
